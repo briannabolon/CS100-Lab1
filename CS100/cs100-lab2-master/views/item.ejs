@@ -1,0 +1,13 @@
+<%- include('header') %>
+
+<h1>Item</h1>
+
+<ul>
+  <% item.forEach(item => { %>
+  <li>
+    <a href="/item/<%- item.id %>">Gallery #<%- item.id %>: <%- item.name %></a>
+  </li>
+  <% }); %>
+</ul>
+
+<%- include('footer') %>
